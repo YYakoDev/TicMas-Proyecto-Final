@@ -28,54 +28,90 @@
 </head>
 <body>
     <div class="full">
+
         <div class="col-izq">
+
+              <!--Foto del perfil-->
             <div class="imagen">
                 <img src="Imagenes/IMGCV.jpg" alt="la imagen de la persona de este CV" height="150px">
             </div>
-            <div class="Contacto">
+
+              <!--Info de contacto: dos idiomas-->
+
+            <div class="Contacto lang lang-es lang-es-ES">
                 <h2>Info de contacto</h2>
                 <ul>
-                    <li>Telefono: <b>117368233</b></li>
+                    <li>Telefono: <b>+54 117368-2330</b></li>
                     <li>Email: <b>carrascojoaquin10@gmail.com</b></li>
                     <li>Linkedin:
                         <a href="https://www.linkedin.com/in/joaquin-carrasco-b583461b5"> 
-                        <button class="linkedinBtn">Ir hacia Linkedin</button>
+                        <button class="linkedinBtn">Ir hacia LinkedIn</button>
                          </a>  
                     </li>
                 </ul>
             </div>
-            <div class="Idiomas">
-                <h2>Idiomas </h2>
+
+            <div class="Contacto lang lang-en">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>Cellphone: <b>+54 11 7368-2330</b></li>
+                    <li>Email: <b>carrascojoaquin10@gmail.com</b></li>
+                    <li>Linkedin:
+                        <a href="https://www.linkedin.com/in/joaquin-carrasco-b583461b5"> 
+                        <button class="linkedinBtn">Go to LinkedIn</button>
+                         </a>  
+                    </li>
+                </ul>
+            </div>
+            
+            <!--Idiomas: dos idiomas-->
+            <div class="Idiomas lang lang-es lang-es-ES">
+                <h2>Idiomas</h2>
                 <ul>
                     <li>Español: <b>Nativo</b></li>
                     <li>Ingles Escrito: <b>Avanzado</b></li>
                     <li>Ingles Oral: <b>Intermedio</b></li>
                 </ul>
             </div>
-            <div class="Hobbies"> 
-                <h2>Hobbies </h2>
+
+            <div class="Idiomas lang lang-en">
+                <h2>Languages</h2>
                 <ul>
-                    <li class="lang lang-es lang-es-ES">Programación de videojuegos</li>
-                    <li class="lang lang-en">Game Programming</li>
+                    <li>Spanish: <b>Native</b></li>
+                    <li>English Writing: <b>Advanced</b></li>
+                    <li>Oral English: <b>Intermediate</b></li>
                 </ul>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
+            <!--Hobbies: dos idiomas-->
+
+            <div class="Hobbies lang lang-es lang-es-ES"> 
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Programación de videojuegos</li>
+                    <li>Leer</li>
+                </ul>
+            </div>
+
+            <div class="Hobbies lang lang-en"> 
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Game Programming</li>
+                    <li>Reading</li>
+                </ul>
+            </div>
+
+            <br><br>     <br><br>     <br><br> 
+
+            <!--Language selector dropdown-->
             <div>
-                <p><b class="lang lang-es lang-es-ES">Detectamos que el idioma de tu navegador es: <b class="lang lang-es"id="browserLang"></b></b></p>
-                <p><b class="lang lang-en">We have detected that your browser's language is: <b class="lang lang-en" id="browserLang"></b></b></p>
+                <p><b class="lang lang-es lang-es-ES">Detectamos que el idioma de tu navegador es: <b class="lang lang-es"id="browserLang">es-ES</b></b></p>
+                <p><b class="lang lang-en">We have detected that your browser's language is: <b class="lang lang-en" id="browserLang">en</b></b></p>
 
                 <p class="lang lang-es lang-es-ES"><b>¿Queres cambiar el idioma?</b></p>
                 <p class="lang lang-en"><b>Do you want to change the language?</b></p>
 
-                <div class="dropdown" id="languageSelector">
+                <div class="btn-group dropup" id="languageSelector">
                     <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <b class="lang lang-es lang-es-ES">Cambiar Idioma</b>
                       <b class="lang lang-en">Change Language</b>
@@ -89,17 +125,30 @@
             </div>
         </div>
 
+                <!--COLUMNA DERECHA EN ESPAÑOL-->
+
+        <div class="col-der lang lang-es lang-es-ES" id="Alata">
+            <div class="Nombre">
+                <h1 class="display-6">
+                    <b>Joaquín Carrasco</b>
+                </h1>
+            </div>
+
+            <div class="Titulo" style="color: orange; display: block;">
+                <h2>
+                    Estudiante en sistemas
+                </h2>
+            </div>
 
 
-        <div class="col-der" id="Alata">
-            <div class="Nombre"><h1><b>Joaquin Carrasco</b></h1></div>
-            <div class="Titulo" style="color: orange;"><h2>Estudiante en sistemas</h2></div>
             <div class="SobreMi">
                 <h2 id="blueTxt">Sobre Mi</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam.
                 </p>
             </div>
+
+
             <div class="Competencias">
                 <h2 id="blueTxt">Competencias</h2>
                 <ul>
@@ -122,6 +171,50 @@
                     <li><b>JavaScript Fundamentos</b> - 2022 - LinkedinLearning</li>
                     <li><b>Java Inicial</b> - 2021 - ITCLOUD & UTN</li>
                     <li><b>Paquete de Office nivel avanzado</b> - 2015 - UTN</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--COLUMNA DERECHA EN INGLES-->
+
+        <div class="col-der lang lang-en" id="Alata">
+            <div class="Nombre"><h1 class="display-6"><b>Joaquín Carrasco</b></h1></div>
+
+            <div class="Titulo" style="color: orange; display: block;">
+                <h2>
+                    It Student
+                </h2>
+            </div>
+
+            <div class="SobreMi">
+                <h2 id="blueTxt">About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam.
+                </p>
+            </div>
+
+            <div class="Competencias">
+                <h2 id="blueTxt">Skills</h2>
+                <ul>
+                    <li>Experience in FrontEnd Development (HTML,CSS,JS)</li>
+                    <li>Experience in Object Oriented Programming (C#)</li>
+                    <li>Experience with Unity</li>
+                    <li>Experience with Office (Word,Excel,Powerpoint)</li>
+                </ul>
+            </div>
+            <div class="Educacion">
+                <h2 id="blueTxt">Education</h2>
+                <ul>
+                    <li><b>Degree in Programming</b>- 2023/now</li>
+                    <li><b>Self-learning game development</b> - 2020/now</li>
+                    <li><b>Highschool finished</b> - 2020</li>
+                </ul>
+                <h3 id="blueTxt">Cursos</h3>
+                <ul>
+                    <li><b>FrontEnd Development</b> - 2023 - TicMas(ArgentinaPrograma)</li>
+                    <li><b>Introduction to JavaScript</b> - 2022 - LinkedInLearning</li>
+                    <li><b>Introduction to Java</b> - 2021 - ITCLOUD & UTN</li>
+                    <li><b>MS Office - Advanced Level</b> - 2015 - UTN</li>
                 </ul>
             </div>
         </div>
