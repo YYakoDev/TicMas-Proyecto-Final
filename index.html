@@ -5,9 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imagenes/LandingPageIcon.png">
+    <!-- de forma general vamos a utilizar el css provisto por bootstrap-->
+  
+    <!-- pero a su vez tambien vamos a proporcionar nuestro propio .css en el caso de que querramos usar fuentes y/o estilos personalizados-->
+        <!-- aca esta el codigo para importar la fuente de googlefonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- primera fuente      font-family: 'Alata', sans-serif;-->
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <!-- segunda fuente importada al proyecto   font-family: 'Climate Crisis', cursive;-->
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Styles/styles.css">
     <title>Curriculum Vitae Joaquin Carrasco</title>
 </head>
 <body>
-    <h1>Curriculum</h1>
+    <div class="full">
+        <div class="col-izq">
+            <div class="imagen">
+                <img src="Imagenes/IMGCV.jpg" alt="la imagen de la persona de este CV" height="150px">
+            </div>
+            <div class="Contacto">
+                <h2>Info de contacto</h2>
+                <ul>
+                    <li>Telefono: <b>117368233</b></li>
+                    <li>Email: <b>carrascojoaquin10@gmail.com</b></li>
+                    <li>Linkedin:<a href="https://www.linkedin.com/in/joaquin-carrasco-b583461b5"> <button class="linkedinBtn">ir hacia Linkedin</button></a>  </li>
+                </ul>
+            </div>
+            <div class="Idiomas">
+                <h2>Idiomas </h2>
+                <ul>
+                    <li>Español: <b>Nativo</b></li>
+                    <li>Ingles Escrito: <b>Avanzado</b></li>
+                    <li>Ingles Oral: <b>Intermedio</b></li>
+                </ul>
+            </div>
+            <div class="Hobbies"> 
+                <h2>Hobbies </h2>
+                <ul>
+                    <li>Programación de videojuegos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-der">
+            <div class="Nombre"></div>
+        </div>
+    </div>
+  
+
+
+
+
+    <!--Mi JS-->
+    <script src="JS/main.js"></script>
+
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
