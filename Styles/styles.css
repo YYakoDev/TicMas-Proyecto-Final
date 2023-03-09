@@ -1,3 +1,6 @@
+
+/*Elementos generales y elementos por clase*/
+
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +15,9 @@ body {
 .full {
     width: 50%;
     max-width: 1000px;
+    min-width: auto;
     min-height: 100px;
+    max-height: auto;
     background-color: rgb(255, 240, 240);
     margin: 0px;
     display: grid;
@@ -21,7 +26,8 @@ body {
 .col-izq
 {
     position: initial;
-    background-color: #206FC2;
+    background-color: #3783d4;
+    /*background-color: #206FC2;*/
     padding: 25px;
 }
 .col-der
@@ -31,17 +37,46 @@ body {
     padding: 25px;
     margin-left: 5px;
 }
-.imagen, .Contacto, .Skills, .Idiomas, .Hobbies, .Nombre, .title,
-.Summary, .Experience, .Education, .project {
+.imagen, .Contacto, .Competencias, .Idiomas, .Hobbies, .Nombre, .Titulo,
+.SobreMi, .Educacion{
+    
     margin-bottom: 25px;
     margin-left: 10px;
 }
-li
+.imagen
+{
+    margin-left: 55px;
+}
+
+/*Elementos por tag*/
+
+h2,h3
+{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h2+ul,h3+ul
 {
     font-family: 'Alata', sans-serif;
     font-weight: normal;
     line-height: 1.5;
 }
-.h2 {
-    background-color: rgb(255, 179, 179);
+button
+{
+    padding: 3px;
+}
+img
+{
+
+    box-shadow:  0px 0px 10px 2px #000;
+}
+
+
+/*Elementos por ID*/
+#Alata
+{
+    font-family: 'Alata', sans-serif;
+}
+#blueTxt
+{
+    color: #206FC2;
 }

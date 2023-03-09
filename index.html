@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imagenes/LandingPageIcon.png">
+    <title>Curriculum Vitae Joaquin Carrasco</title>
+
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--CSS-->
     <!-- de forma general vamos a utilizar el css provisto por bootstrap-->
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- pero a su vez tambien vamos a proporcionar nuestro propio .css en el caso de que querramos usar fuentes y/o estilos personalizados-->
-        <!-- aca esta el codigo para importar la fuente de googlefonts-->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <!-- aca esta el codigo para importar la fuente de googlefonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
         <!-- primera fuente      font-family: 'Alata', sans-serif;-->
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
         <!-- segunda fuente importada al proyecto   font-family: 'Climate Crisis', cursive;-->
         <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="Styles/styles.css">
-    <title>Curriculum Vitae Joaquin Carrasco</title>
 </head>
 <body>
     <div class="full">
@@ -32,7 +37,11 @@
                 <ul>
                     <li>Telefono: <b>117368233</b></li>
                     <li>Email: <b>carrascojoaquin10@gmail.com</b></li>
-                    <li>Linkedin:<a href="https://www.linkedin.com/in/joaquin-carrasco-b583461b5"> <button class="linkedinBtn">ir hacia Linkedin</button></a>  </li>
+                    <li>Linkedin:
+                        <a href="https://www.linkedin.com/in/joaquin-carrasco-b583461b5"> 
+                        <button class="linkedinBtn">Ir hacia Linkedin</button>
+                         </a>  
+                    </li>
                 </ul>
             </div>
             <div class="Idiomas">
@@ -46,18 +55,81 @@
             <div class="Hobbies"> 
                 <h2>Hobbies </h2>
                 <ul>
-                    <li>Programación de videojuegos</li>
+                    <li class="lang lang-es">Programación de videojuegos</li>
+                    <li class="lang lang-en">Game Programming</li>
                 </ul>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div>
+                <p><b class="lang lang-es">Detectamos que el idioma de tu navegador es: <b class="lang lang-es"id="browserLang"></b></b></p>
+                <p><b class="lang lang-en">We have detected that your browser's language is: <b class="lang lang-en" id="browserLang"></b></b></p>
+
+                <p class="lang lang-es"><b>¿Queres cambiar el idioma?</b></p>
+                <p class="lang lang-en"><b>Do you want to change the language?</b></p>
+
+                <div class="dropdown" id="languageSelector">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <b class="lang lang-es">Cambiar Idioma</b>
+                      <b class="lang lang-en">Change Language</b>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Español</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                  </div>
+            </div>
         </div>
-        <div class="col-der">
-            <div class="Nombre"><h1>Joaquin Carrasco</h1></div>
+
+
+
+        <div class="col-der" id="Alata">
+            <div class="Nombre"><h1><b>Joaquin Carrasco</b></h1></div>
+            <div class="Titulo" style="color: orange;"><h2>Estudiante en sistemas</h2></div>
+            <div class="SobreMi">
+                <h2 id="blueTxt">Sobre Mi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="Competencias">
+                <h2 id="blueTxt">Competencias</h2>
+                <ul>
+                    <li>Experiencia en FrontEnd Development (html,css,js)</li>
+                    <li>Experiencia en programacion con lenguajes orientado a objetos (C#)</li>
+                    <li>Experiencia con Unity</li>
+                    <li>Paquete de Office (Word,Excel,Powerpoint)</li>
+                </ul>
+            </div>
+            <div class="Educacion">
+                <h2 id="blueTxt">Educación</h2>
+                <ul>
+                    <li><b>Tecnicatura en Programación</b>- 2023/Actualidad</li>
+                    <li><b>Estudio de Programación de videojuegos de forma autodidacta</b> - 2020/Actualidad</li>
+                    <li><b>Secundario Completo</b> - 2020</li>
+                </ul>
+                <h3 id="blueTxt">Cursos</h3>
+                <ul>
+                    <li><b>Desarrollo FrontEnd</b> - 2023 - TicMas(ArgentinaPrograma)</li>
+                    <li><b>JavaScript Fundamentos</b> - 2022 - LinkedinLearning</li>
+                    <li><b>Java Inicial</b> - 2021 - ITCLOUD & UTN</li>
+                    <li><b>Paquete de Office nivel avanzado</b> - 2015 - UTN</li>
+                </ul>
+            </div>
         </div>
     </div>
   
 
 
-
+    
 
     <!--Mi JS-->
     <script src="JS/main.js"></script>
