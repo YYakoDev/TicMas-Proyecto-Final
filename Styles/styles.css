@@ -3,14 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-html,body
-{
-    position:fixed;
-
-}
 body {
-    background-color: rgb(253, 254, 255);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +13,7 @@ body {
     width: 50%;
     max-width: 1000px;
     min-height: 100px;
-    background-color: rgb(245, 239, 231);
+    background-color: rgb(255, 240, 240);
     margin: 0px;
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -33,15 +27,14 @@ body {
 .col-der
 {
     position: initial;
-    background-color: #F4E2E3;
+    background-color: #e3ebf0be;
     padding: 25px;
-    margin-right: 0px;
     margin-left: 5px;
 }
-.imagen, .Contacto, .Skills, .Idiomas, .Hobbies, .title,
+.imagen, .Contacto, .Skills, .Idiomas, .Hobbies, .Nombre, .title,
 .Summary, .Experience, .Education, .project {
     margin-bottom: 25px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 li
 {
