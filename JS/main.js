@@ -3,7 +3,7 @@
 
 //codigo del selector de idiomas
 // primero detectamos el idioma del navegador del usuario
-const lang = navigator.userLanguage || navigator.language || 'es-Es';
+const lang = navigator.userLanguage || navigator.language || 'es-ES';
 var choosenLanguage = lang;
 
 
